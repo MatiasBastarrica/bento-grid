@@ -69,10 +69,14 @@ img {
   color: var(--purple-500);
 }
 
+.italic {
+  font-style: italic;
+}
+
 .stack {
   display: flex;
   flex-direction: column;
-  gap: var(--space, 1rem);
+  gap: var(--spacer, 1rem);
   align-items: var(--alignment, center);
 }
 
@@ -87,6 +91,7 @@ body {
 h1,
 h2 {
   font-weight: var(--fw-500);
+  line-height: 0.9;
 }
 
 main {
@@ -95,6 +100,7 @@ main {
 
 article {
   border-radius: 0.7rem;
+  padding: var(--space, 1em);
 }
 
 /* ### GRID ### */
@@ -102,4 +108,121 @@ article {
 .grid {
   display: grid;
   gap: 2em;
+}
+
+/* ### ARTICLE 1 ### */
+
+.article-1 {
+  --space: 2em 1em;
+  text-align: center;
+}
+
+.article-1 h1 {
+  font-size: 3rem;
+}
+
+.article-1 .description {
+  color: var(--purple-100);
+}
+
+.stars {
+  align-self: center;
+  max-width: 60%;
+}
+
+/* ### ARTICLE 2 ### */
+
+.article-2 {
+  --alignment: flex-start;
+}
+
+.article-2 h2 {
+  font-size: 1.5rem;
+}
+
+/* ### ARTICLE 3 ### */
+
+.article-3 {
+  --spacer: 0;
+  --alignment: flex-start;
+}
+
+.article-3 h2 {
+  font-size: 1.5rem;
+}
+
+.article-3 img {
+  transform: translateY(1em);
+  width: 70%;
+  margin-right: auto;
+}
+
+/* ### ARTICLE 4 ### */
+
+.article-4 {
+  --space: 1.8em 1em;
+  --spacer: 1.5rem;
+  text-align: center;
+}
+
+.article-4 h2 {
+  font-size: 1.5rem;
+}
+
+/* ### ARTICLE 5 ### */
+
+.article-5 {
+  --space: 1.5em;
+  --spacer: 2.5rem;
+  text-align: center;
+}
+
+.article-5 > * {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.article-5 h2 {
+  font-size: 1.9rem;
+}
+
+/* ### ARTICLE 6 ### */
+
+.article-6 {
+  --alignment: flex-start;
+}
+
+.article-6 h2 {
+  font-size: 2.6rem;
+}
+
+.article-6 img {
+  width: 55%;
+  margin-right: auto;
+}
+
+/* ### ARTICLE 7 ### */
+
+.article-7 {
+  --space: 2em 1em;
+  --alignment: flex-start;
+}
+
+.article-7 h2 {
+  font-size: 1.9rem;
+}
+
+.article-7 img {
+  width: 60%;
+  margin-right: auto;
+}
+
+/* ### ARTICLE 8 ### */
+
+.article-8 {
+  --alignment: flex-start;
+}
+
+.article-8 h2 {
+  font-size: 1.9rem;
 }
