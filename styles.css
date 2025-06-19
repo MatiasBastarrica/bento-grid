@@ -9,10 +9,25 @@
 
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 7%);
+  --light-gray: hsla(0, 0%, 87%, 0.716);
 
   --ff-dm-sans: "DM Sans", sans-serif;
   --fw-400: 400;
   --fw-500: 500;
+}
+
+/* ### CSS RESET ### */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ### UTILITIES ### */
@@ -31,6 +46,11 @@
 
 .bg-yellow-100 {
   background-color: var(--yellow-100);
+}
+
+.bg-white {
+  background-color: var(--white);
+  box-shadow: 0px 0px 15px var(--light-gray);
 }
 
 .fg-black {
@@ -67,4 +87,19 @@ body {
 h1,
 h2 {
   font-weight: var(--fw-500);
+}
+
+main {
+  padding: 2em 1em;
+}
+
+article {
+  border-radius: 0.7rem;
+}
+
+/* ### GRID ### */
+
+.grid {
+  display: grid;
+  gap: 2em;
 }
