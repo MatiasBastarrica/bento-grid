@@ -1,0 +1,27 @@
+/* ### CSS VARIABLES ### */
+
+:root {
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  --ff-dm-sans: "DM Sans", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+}
+
+body {
+  font-family: var(--ff-dm-sans);
+  font-weight: var(--fw-400);
+  font-size: 1.125rem;
+}
+
+h1,
+h2 {
+  font-weight: var(--fw-500);
+}
