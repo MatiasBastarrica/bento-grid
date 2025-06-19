@@ -15,6 +15,49 @@
   --fw-500: 500;
 }
 
+/* ### UTILITIES ### */
+
+.bg-purple-500 {
+  background-color: var(--purple-500);
+}
+
+.bg-purple-100 {
+  background-color: var(--purple-100);
+}
+
+.bg-yellow-500 {
+  background-color: var(--yellow-500);
+}
+
+.bg-yellow-100 {
+  background-color: var(--yellow-100);
+}
+
+.fg-black {
+  color: var(--black);
+}
+
+.fg-white {
+  color: var(--white);
+}
+
+.text-accent-yellow {
+  color: var(--yellow-500);
+}
+
+.text-accent-purple {
+  color: var(--purple-500);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space, 1rem);
+  align-items: var(--alignment, center);
+}
+
+/* ### GLOBAL STYLING ### */
+
 body {
   font-family: var(--ff-dm-sans);
   font-weight: var(--fw-400);
